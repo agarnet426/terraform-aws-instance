@@ -14,12 +14,12 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = var.vpc_security_group_ids
   count                  = var.web_count
 
-  tags = {
-    "Identity"    = var.identity
-    "Name"        = "Student"
-    "Environment" = "Training"
-    "ABC"         = "XYZ"
-  }
+#  tags = {
+#    "Identity"    = var.identity
+#    "Name"        = "Student"
+#    "Environment" = "Training"
+#    "ABC"         = "XYZ"
+#  }
 }
 
 output "public_ip" {
